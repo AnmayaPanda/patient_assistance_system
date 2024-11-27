@@ -7,6 +7,7 @@
     left: 0;
     overflow-y: auto;
     background-color: #19006c;
+    font-family: 'Alice';
 }
 
 .main-content {
@@ -16,6 +17,7 @@
     background-image: url("main_background.png");
     background: linear-gradient(135deg, #00ccffe4, #fbff00); /* Blue to Green */
     color: #000000;
+    font-family: 'Alice';
 }
 
 /* Section Styling */
@@ -62,4 +64,23 @@ ul {
     color: rgb(0, 0, 0); /* Adjust text color for visibility */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
     margin: 0;
+}
+
+/* Container for Video and Image */
+#video-image-section {
+    display: flex; /* Use Flexbox for horizontal alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Align content vertically */
+    gap: 20px; /* Space between video and image */
+    padding: 20px;
+}
+
+/* Style for Media Items (Video and Image) */
+.media-item {
+    width: auto; /* Maintain aspect ratio */
+    height: 500px; /* Set the height to ensure uniform size */
+    object-fit: cover; /* Ensure content fits inside the element */
+    border: 2px solid #ddd; /* Optional: Add a border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
 }
